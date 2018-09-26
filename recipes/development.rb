@@ -1,2 +1,2 @@
 package "libpq-dev"
-package "postgresql-contrib"
+package "postgresql-contrib-#{node[:postgresql][:version]}"
