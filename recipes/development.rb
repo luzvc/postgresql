@@ -1,2 +1,7 @@
-package "libpq-dev"
-package "postgresql-contrib-#{node[:postgresql][:version]}"
+package "libpq-dev" do
+  action :upgrade
+end
+
+package "postgresql-contrib" do
+  action :upgrade
+end
