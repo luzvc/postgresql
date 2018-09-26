@@ -1,7 +1,5 @@
 include_recipe "apt"
 
-apt_update
-
 package "apt-transport-https"
 
 apt_repository "postgresql_org_repository" do
