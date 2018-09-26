@@ -2,7 +2,7 @@
 # Cookbook Name:: postgresql
 # Recipe:: default
 #
-# Copyright 2013, YOUR_COMPANY_NAME
+# Copyright 2018, LUZ Planilhas
 #
 # All rights reserved - Do Not Redistribute
 #
@@ -21,5 +21,7 @@ execute "locale fix" do
 end
 
 ENV['LANGUAGE'] = ENV['LANG'] = ENV['LC_ALL'] = "en_US.UTF-8"
+
+include_recipe "postgresql::repository"
 include_recipe "postgresql::server"
 include_recipe "postgresql::development"
