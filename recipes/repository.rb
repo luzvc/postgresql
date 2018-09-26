@@ -1,3 +1,5 @@
+include_recipe "apt"
+
 apt_update
 
 package "apt-transport-https"
