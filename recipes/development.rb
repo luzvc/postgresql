@@ -1,3 +1,5 @@
+include_recipe "apt"
+
 package "libpq-dev" do
   action :upgrade
 end

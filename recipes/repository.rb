@@ -1,5 +1,3 @@
-include_recipe "apt"
-
 package "apt-transport-https"
 
 apt_repository "postgresql_org_repository" do
