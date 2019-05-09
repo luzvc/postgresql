@@ -1,9 +1,9 @@
 include_recipe "apt"
 
 package "libpq-dev" do
-  action :upgrade
+  action :install
 end
 
 package "postgresql-contrib" do
-  action :upgrade
+  action :install
 end
